@@ -1,0 +1,68 @@
+.steps-progressbar > ul {
+  display: table;
+  table-layout: fixed;
+  border-collapse: separate;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  color: #999;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.steps-progressbar > ul > li {
+  position: relative;
+  display: table-cell;
+  list-style-type: none;
+  font-weight: 400;
+  text-align: center;
+}
+
+.steps-progressbar > ul > li:before {
+  position: inherit;
+  display: block;
+  margin: 10px auto 20px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgb(165, 148, 172);
+  border-radius: 50%;
+  background-color: rgb(161, 144, 168);
+  line-height: 15px;
+  content: " ";
+  z-index: 1;
+}
+
+.steps-progressbar > ul > li:after {
+  position: absolute;
+  top: 15px;
+  right: 50%;
+  width: 100%;
+  height: 5px;
+  box-shadow: inset 0 0 5px rgb(117, 75, 134);
+  background-color: #e3e3e3;
+  content: " ";
+  z-index: 0;
+
+}
+
+.steps-progressbar > ul > li:first-child:after {
+  content: none;
+}
+
+.steps-progressbar > ul > li.active:before, .steps-progressbar > ul > li.previous:before {
+  border-color: rgb(184, 37, 241);
+  background-color: rgb(184, 37, 241);
+}
+
+.steps-progressbar > ul > li.active:after, .steps-progressbar > ul > li.previous:after {
+  box-shadow: none;
+  background-color: rgb(184, 37, 241);
+}
+
+.steps-progressbar > ul > li.active:before {
+  margin-top: 0;
+  margin-bottom: 16.7px;
+  width: 21.7px;
+  height: 21.7px;
+}
+
