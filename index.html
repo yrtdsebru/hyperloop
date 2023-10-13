@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Hyperloop</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Custom-Card.css">
+    <link rel="stylesheet" href="assets/css/Steps-Progressbar.css">
+    <link rel="stylesheet" href="assets/css/stylee.css">
+</head>
+
+<body class="font-monospace"
+    style="background: linear-gradient(#00032c, rgb(3,4,48) 8%, rgb(12,7,63) 13%, rgb(34,15,96) 21%, rgb(59,23,128) 32%, rgb(69,26,141) 42%, rgb(98,36,179) 56%, rgb(105,41,181) 67%, rgb(122,51,185) 77%, rgb(137,51,197) 83%, rgb(164,50,219) 89%, rgb(184,50,235) 93%, #b666e0 100%), rgb(124,39,194);height: 900px;">
+    <!--navbar-->
+    <nav class="navbar navbar-dark navbar-expand-md font-monospace border rounded-0 border-0"
+        style="background: #00032c;height: 70px;color: rgb(0,3,44);">
+        <div class="container"><a class="navbar-brand pulse animated infinite" href="#"
+                style="margin: 0px;">
+                <div style="height: 70px;">
+                    <div class="collapse navbar-collapse flex-grow-0 order-md-first" id="navcol-6"
+                        style="height: 70px;">
+                        <ul class="navbar-nav ms-auto" style="position: static;display: block;height: 70px;">
+                            <!--dropdown and logo-->
+                            <li class="nav-item dropdown" id="1-columna" style="height: 70px;"><a
+                                    class="dropdown-toggle nav-link" aria-expanded="true" data-bs-toggle="dropdown"
+                                    href="#" style="width: 240px;position: sticky;height: 70px;padding: 0px;"><img
+                                        class="border rounded-circle border-0 shadow-none tada animated infinite"
+                                        src="assets/img/logo-techno.png" style="height:40px;width: 120px; margin-top: 15px;"
+                                        width="116" height="60"></a>
+                                <div class="dropdown-menu border rounded-0 border-0" data-bs-popper="none"
+                                    style="background: rgb(0,3,44);height: 830px;width: 350px;color: rgb(0,3,44);margin-top: 0px;border-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;border-bottom-color: rgba(0,0,0,0);border-left-style: none;">
+                                    <!--Ip connection-->
+                                    <div class="col-md-6" style="width: 350px;padding-right: 0px;background: #00032c;">
+                                        <form style="margin: 30px;">
+                                            <div>
+                                                <div class="col">
+                                                    <div class="row">
+                                                        <div class="col" style="margin-bottom: 15px;">
+                                                            <p class="font-monospace fs-5 fw-bold text-light"
+                                                                style="margin-bottom: 5px;">IP Adresi:</p><input
+                                                                class="form-control" type="text"
+                                                                placeholder="192.168.9.101">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col" style="margin-bottom: 15px;">
+                                                            <p class="font-monospace fs-5 fw-bold text-light"
+                                                                style="margin-bottom: 5px;">Alt Ağ Maskesi:</p><input
+                                                                class="form-control" type="text"
+                                                                placeholder="255.255.255.0">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col" style="margin-bottom: 40px;">
+                                                            <p class="font-monospace fs-5 fw-bold text-light"
+                                                                style="margin-bottom: 5px;">Varsayılan Ağ Geçidi:</p>
+                                                            <input class="form-control" type="text"
+                                                                placeholder="192.168.9.1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col"><button
+                                                                class="btn btn-success font-monospace fw-normal border rounded-pill border-success shadow-lg"
+                                                                data-bss-hover-animate="rubberBand" type="submit"
+                                                                style="margin-right: 20px;margin-left: 25px;width: 110px;transform-style: preserve-3d;padding-right: 0px;padding-left: 0px;">Bağlan</button><button
+                                                                class="btn btn-danger font-monospace fw-normal border rounded-pill border-danger shadow-lg"
+                                                                data-bss-hover-animate="rubberBand" type="submit"
+                                                                style="width: 110px;transform-style: preserve-3d;padding-right: 0px;padding-left: 0px;">Sonlandır</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </a><button data-bs-target="#navcol-6" data-bs-toggle="collapse" class="navbar-toggler"><span
+                    class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        </div>
+    </nav>
+    <div class="container"
+        style="padding-top: 0px;padding-right: 12px;padding-left: 12px;padding-bottom: 50px;height: 700px;margin-top: 0px;margin-bottom: 50px;">
+        <div class="row" style="width: 1320px;">
+            <!--***************************** ilk kolon 1/2 ******************************-->
+            <div class="col" style="width: 970px;margin-right: 20px;padding-right: 0px;padding-left: 0px;">
+                <div style="width: 950px;">
+                    <!--ilk satır 1/3-->
+                    <div class="bg-dark bg-gradient border rounded border-0 shadow-lg"
+                        style="background: #ffffff;margin-bottom: 10px;margin-top: 15px;height: 140px;">
+                        <div class="row" style="width: 950px;margin-top: 0px;margin-bottom: 0px;">
+                            <!--hız gauge-->
+                            <div class="col" style="width: 160px;margin-left: 35px; margin-top: 15px;">
+                                <div class="GaugeMeter" id="GaugeMeter_1" data-percent="28"
+                                    data-text="<font style='color:White;font-size:20px;'>105</font>"
+                                    data-append="<font style='color:white;font-size:13px;'>km/h</font>" data-size="120"
+                                    data-theme="White" data-back="RGBa(0,0,0,.1)" data-width="12" data-label="Hız"
+                                    data-style="Arch" data-label_color="#FFF"></div>
+                            </div>
+                            <!--localizasyon-->
+                            <div class="col">
+                                <div class="steps-progressbar" style="padding-top: 45px;">
+                                    <ul style="width: 747px;">
+                                        <li class="previous">&nbsp;0 metre</li>
+                                        <li class="previous">&nbsp;&nbsp;</li>
+                                        <li class="previous">&nbsp;&nbsp;</li>
+                                        <li class="previous">&nbsp;&nbsp;</li>
+                                        <li class="active">&nbsp;&nbsp;</li>
+                                        <li>50 metre</li>
+                                        <li>&nbsp;&nbsp;</li>
+                                        <li>&nbsp;&nbsp;</li>
+                                        <li>&nbsp;&nbsp;</li>
+                                        <li>&nbsp;&nbsp;</li>
+                                        <li>100 metre</li>
+                                        <li>&nbsp;&nbsp;</li>
+                                        <li>&nbsp;&nbsp;</li>
+                                        <li>&nbsp;&nbsp;</li>
+                                        <li>&nbsp;&nbsp;</li>
+                                        <li>150 metre</li>
+                                        <li>&nbsp;&nbsp;</li>
+                                        <li>&nbsp;&nbsp;</li>
+                                        <li>178 metre</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--ikinci satır 2/3-->
+                    <div class="bg-dark bg-gradient border rounded border-0 shadow-lg"
+                        style="margin-bottom: 10px;height: 150px;">
+                        <div class="row" style="width: 950px;margin-left: 35px;padding-top: 8px;">
+                            <div class="col" style="padding-top: 15px;">
+                                <div class="GaugeMeter" id="GaugeMeter_2" data-percent="28"
+                                    data-text="<font style='color:White;font-size:30px;letter-spacing:-1px'>28</font>"
+                                    data-append="<font style='color:white'>°C</font>" data-size="140"
+                                    data-theme="Sıcaklık" data-back="RGBa(0,0,0,.1)" data-animate_gauge_colors="1"
+                                    data-width="6" data-label="Motor Sıcaklığı" data-style="Semi"
+                                    data-label_color="#FFF">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="GaugeMeter" id="GaugeMeter_3" data-percent="87"
+                                    data-prepend="<font style='color:White;font-size:20px;margin-left:-5px'>%</font>"
+                                    data-text="<font style='color:White;font-size:30px;letter-spacing:-1px'>87</font>"
+                                    data-size="135" data-theme="Basınç" data-back="RGBa(0,0,0,.1)"
+                                    data-animate_gauge_colors="1" data-width="2" data-label="Basınç"
+                                    data-label_color="#FFF">
+                                </div>
+                            </div>
+                            <div class="col" style="padding-top: 15px;">
+                                <div class="GaugeMeter" id="GaugeMeter_4" data-percent="32"
+                                    data-text="<font style='color:White;font-size:30px;letter-spacing:-1px'>32</font>"
+                                    data-append="<font style='color:white'>°C</font>" data-size="140"
+                                    data-theme="Sıcaklık" data-back="RGBa(0,0,0,.1)" data-animate_gauge_colors="1"
+                                    data-width="6" data-label="Batarya Sıcaklığı" data-style="Semi"
+                                    data-label_color="#FFF"></div>
+                            </div>
+                            <div class="col">
+                                <div class="GaugeMeter" id="GaugeMeter_5" data-percent="100"
+                                    data-prepend="<font style='color:White;font-size:24px;margin-left:-1px'>%</font>"
+                                    data-text="<font style='color:White;font-size:30px;letter-spacing:-1px'>100</font>"
+                                    data-size="135" data-theme="Batarya" data-back="RGBa(0,0,0,.1)"
+                                    data-animate_gauge_colors="1" data-width="10" data-label="Güç Tüketimi"
+                                    data-label_color="#FFF" data-stripe="3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--son satır 3/3-->
+                    <div class="bg-dark bg-gradient border rounded border-0 shadow-lg"
+                        style="margin-top: 0px;margin-bottom: 10px;">
+                        <div class="row" style="width: 950px;height:354px;margin-bottom: 0px;">
+                            <div>
+                                <canvas id="myChart" style="width: 940px;height:352px;margin:5px;margin-left:20px ;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <!--****************************************** ikinci kolon 2/2 *******************************-->
+            <div class="col" style="width: 350px;height: 700px;">
+                <!-- Başlat, levite ,ileri ,geri ,frenle, durdur butonları-->
+                <div style="width: 350px;">
+                    <div class="row bg-dark bg-gradient border rounded border-0 shadow-lg"
+                        style=" height:140px;padding-top:38px;margin-left: -39px;margin-top: 15px;">
+                        <div class="col-3">
+                            <button type="submit" class="btn btn-success"
+                                style="border:none;border-radius:19%;width:80px;height: 60px;">Başlat</button>
+                        </div>
+                        <div class="col-3" style="margin-top: -8px;">
+                            <div class="row"><button type="submit" class="btn"
+                                    style="border:none;border-radius:10%;margin-bottom: 4px;background-color: rgb(186, 195, 203);width: 95px;">İleri</button>
+                            </div>
+                            <div class="row"><button type="submit" class="btn"
+                                    style="border:none;border-radius:10%;background-color: rgb(186, 195, 203);width: 95px;">Geri</button>
+                            </div>
+                        </div>
+                        <div class="col-3" style="margin-top: -8px;">
+                            <div class="row"><button type="submit" class="btn"
+                                    style="border:none;border-radius:10%;margin-bottom: 4px;background-color: rgb(186, 195, 203);width: 95px;">Frenle</button>
+                            </div>
+                            <div class="row"><button type="submit" class="btn"
+                                    style="border:none;border-radius:10%;background-color: rgb(186, 195, 203);width: 95px;">Levite</button>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <button type="submit" class="btn btn-danger"
+                                style="border:none;border-radius:19%;width:80px;height: 60px;margin-left:-7px ;background: btn-info">Durdur</button>
+                        </div>
+                    </div>
+
+                    <!--Hız tablosu -->
+                    <div class="row" style="width: 330px;margin-right: -12px;margin-top: 10px;margin-bottom: 5px;">
+                        <div class="col" style="width: 330px;">
+                            <div class="card text-dark bg-dark font-monospace border rounded border-0 shadow-lg"
+                                style="width: 320px;">
+                                <div class="card-header bg-dark bg-gradient border rounded border-0"
+                                    style="background: rgb(65,71,76);height: 37px;padding-right: 0px;padding-left: 0px;padding-top: 2px;padding-bottom: 2px;">
+                                    <a class="btn header-arrow-btn" role="button" href="#detailed-view-1"
+                                        data-bs-toggle="collapse" style="padding-right: 12px;padding-left: 12px;"><i
+                                            class="fa fa-chevron-right" style="color: var(--bs-white);"></i><i
+                                            class="fa fa-chevron-down" style="color: var(--bs-card-bg);"></i></a><span
+                                        class="font-monospace"
+                                        style="font-size: 20px;font-weight: bold;color: var(--bs-card-bg);">Hız</span>
+                                </div>
+                                <div class="card-body border rounded border-0 shadow-lg collapse" id="detailed-view-1"
+                                    style="padding: 0px; height: 0px;">
+                                    <ul class="list-group bg-dark bg-gradient border rounded border-0 shadow-lg list-group-flush"
+                                        style="background: var(--bs-card-cap-bg);">
+                                        <li class="list-group-item d-flex align-items-center"
+                                            style="background: #41474c;border-radius: 0px;height: 25px;border-style: none;border-bottom: 2px solid var(--bs-black);border-bottom-left-radius: 10px;border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 8px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em"
+                                                height="1em" fill="currentColor" class="text-white"
+                                                style="border-radius: 0px;padding: 5px;width: 30px;height: 25px;border: 0.4px none var(--bs-body-color);border-right-style: solid;border-right-color: rgb(0,0,0);border-bottom-right-radius: 8px;border-top-right-radius: 1px;font-size: 10px;padding-left: 0px;">
+                                                <path
+                                                    d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z">
+                                                </path>
+                                            </svg><span class="font-monospace text-white"
+                                                style="margin-left: 30px;font-size: 14px;font-weight: bold;width: 35px;height: 20px;">2</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center"
+                                            style="background: #41474c;border-radius: 8px;height: 25px;border-style: none;border-bottom: 2px solid var(--bs-black);border-top-left-radius: 10px;border-bottom-left-radius: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em"
+                                                height="1em" fill="currentColor" class="text-white"
+                                                style="border-radius: 0px;padding: 5px;width: 30px;height: 25px;border: 0.4px none var(--bs-body-color);border-right-style: solid;border-right-color: rgb(0,0,0);border-bottom-right-radius: 8px;border-top-right-radius: 8px;font-size: 10px;padding-left: 0px;">
+                                                <path
+                                                    d="M378 82.61L224 298.3v149.8c0 17.67-14.31 31.1-32 31.1S160 465.7 160 448V298.3L5.969 82.61C-4.313 68.23-.9688 48.25 13.41 37.97c14.34-10.27 34.38-6.922 44.63 7.453L192 232.1l133.1-187.5c10.28-14.37 30.28-17.7 44.63-7.453C384.1 48.25 388.3 68.23 378 82.61z">
+                                                </path>
+                                            </svg><span class="font-monospace text-white"
+                                                style="margin-left: 30px;font-size: 14px;font-weight: bold;height: 20px;width: 35px;">2</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center"
+                                            style="background: #41474c;border-radius: 8px;height: 25px;border-style: none;border-top-style: none;border-bottom: 3px solid var(--bs-black);border-bottom-left-radius: 10px;border-top-left-radius: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em"
+                                                height="1em" fill="currentColor" class="text-white"
+                                                style="border-radius: 0px;padding: 5px;width: 30px;height: 25px;border: 0.4px none var(--bs-body-color);border-right-style: solid;border-right-color: rgb(0,0,0);border-bottom-right-radius: 1px;border-top-right-radius: 8px;font-size: 10px;padding-left: 0px;">
+                                                <path
+                                                    d="M384 448c0 17.67-14.31 32-32 32H32c-12.41 0-23.72-7.188-28.97-18.42c-5.281-11.25-3.562-24.53 4.375-34.06l276.3-331.5H32c-17.69 0-32-14.33-32-32s14.31-32 32-32h320c12.41 0 23.72 7.188 28.97 18.42c5.281 11.25 3.562 24.53-4.375 34.06L100.3 416H352C369.7 416 384 430.3 384 448z">
+                                                </path>
+                                            </svg><span class="font-monospace text-white"
+                                                style="margin-left: 30px;font-size: 14px;font-weight: bold;width: 35px;height: 20px;">3</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--İvme tablosu -->
+                    <div class="row" style="width: 330px;margin-right: -12px;margin-top: 5px;margin-bottom: 5px;">
+                        <div class="col" style="width: 330px;">
+                            <div class="card text-dark bg-dark font-monospace border rounded border-0 shadow-lg"
+                                style="width: 320px;">
+                                <div class="card-header bg-dark bg-gradient border rounded border-0"
+                                    style="background: rgb(65,71,76);height: 37px;padding-right: 0px;padding-left: 0px;padding-top: 2px;padding-bottom: 2px;">
+                                    <a class="btn header-arrow-btn" role="button" href="#detailed-view-2"
+                                        data-bs-toggle="collapse" style="padding-right: 12px;padding-left: 12px;"><i
+                                            class="fa fa-chevron-right" style="color: var(--bs-white);"></i><i
+                                            class="fa fa-chevron-down" style="color: var(--bs-card-bg);"></i></a><span
+                                        class="font-monospace"
+                                        style="font-size: 20px;font-weight: bold;color: var(--bs-card-bg);">İvme</span>
+                                </div>
+                                <div class="card-body collapse" id="detailed-view-2" style="padding: 0px; height: 0px;">
+                                    <ul class="list-group bg-dark bg-gradient border rounded border-0 shadow-lg list-group-flush"
+                                        style="background: var(--bs-card-cap-bg);">
+                                        <li class="list-group-item d-flex align-items-center"
+                                            style="background: #41474c;border-radius: 0px;height: 25px;border-style: none;border-bottom: 2px solid var(--bs-black);border-bottom-left-radius: 10px;border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 8px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em"
+                                                height="1em" fill="currentColor" class="text-white"
+                                                style="border-radius: 0px;padding: 5px;width: 30px;height: 25px;border: 0.4px none var(--bs-body-color);border-right-style: solid;border-right-color: rgb(0,0,0);border-bottom-right-radius: 8px;border-top-right-radius: 1px;font-size: 10px;padding-left: 0px;">
+                                                <path
+                                                    d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z">
+                                                </path>
+                                            </svg><span class="font-monospace text-white"
+                                                style="margin-left: 30px;font-size: 14px;font-weight: bold;width: 35px;height: 20px;">0</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center"
+                                            style="background: #41474c;border-radius: 8px;height: 25px;border-style: none;border-bottom: 2px solid var(--bs-black);border-top-left-radius: 10px;border-bottom-left-radius: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em"
+                                                height="1em" fill="currentColor" class="text-white"
+                                                style="border-radius: 0px;padding: 5px;width: 30px;height: 25px;border: 0.4px none var(--bs-body-color);border-right-style: solid;border-right-color: rgb(0,0,0);border-bottom-right-radius: 8px;border-top-right-radius: 8px;font-size: 10px;padding-left: 0px;">
+                                                <path
+                                                    d="M378 82.61L224 298.3v149.8c0 17.67-14.31 31.1-32 31.1S160 465.7 160 448V298.3L5.969 82.61C-4.313 68.23-.9688 48.25 13.41 37.97c14.34-10.27 34.38-6.922 44.63 7.453L192 232.1l133.1-187.5c10.28-14.37 30.28-17.7 44.63-7.453C384.1 48.25 388.3 68.23 378 82.61z">
+                                                </path>
+                                            </svg><span class="font-monospace text-white"
+                                                style="margin-left: 30px;font-size: 14px;font-weight: bold;height: 20px;width: 35px;">3</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center"
+                                            style="background: #41474c;border-radius: 8px;height: 25px;border-style: none;border-top-style: none;border-bottom: 3px solid var(--bs-black);border-bottom-left-radius: 10px;border-top-left-radius: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em"
+                                                height="1em" fill="currentColor" class="text-white"
+                                                style="border-radius: 0px;padding: 5px;width: 30px;height: 25px;border: 0.4px none var(--bs-body-color);border-right-style: solid;border-right-color: rgb(0,0,0);border-bottom-right-radius: 1px;border-top-right-radius: 8px;font-size: 10px;padding-left: 0px;">
+                                                <path
+                                                    d="M384 448c0 17.67-14.31 32-32 32H32c-12.41 0-23.72-7.188-28.97-18.42c-5.281-11.25-3.562-24.53 4.375-34.06l276.3-331.5H32c-17.69 0-32-14.33-32-32s14.31-32 32-32h320c12.41 0 23.72 7.188 28.97 18.42c5.281 11.25 3.562 24.53-4.375 34.06L100.3 416H352C369.7 416 384 430.3 384 448z">
+                                                </path>
+                                            </svg><span class="font-monospace text-white"
+                                                style="margin-left: 30px;font-size: 14px;font-weight: bold;width: 35px;height: 20px;">2</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Konum tablosu -->
+                    <div class="row" style="width: 330px;margin-right: -12px;margin-top: 5px;margin-bottom: 5px;">
+                        <div class="col" style="width: 330px;">
+                            <div class="card text-dark bg-dark font-monospace border rounded border-0 shadow-lg"
+                                style="width: 320px;">
+                                <div class="card-header bg-dark bg-gradient border rounded border-0"
+                                    style="background: rgb(65,71,76);height: 37px;padding-right: 0px;padding-left: 0px;padding-top: 2px;padding-bottom: 2px;">
+                                    <a class="btn header-arrow-btn" role="button" href="#detailed-view-3"
+                                        data-bs-toggle="collapse" style="padding-right: 12px;padding-left: 12px;"><i
+                                            class="fa fa-chevron-right" style="color: var(--bs-white);"></i><i
+                                            class="fa fa-chevron-down" style="color: var(--bs-card-bg);"></i></a><span
+                                        class="font-monospace"
+                                        style="font-size: 20px;font-weight: bold;color: var(--bs-card-bg);">Konum</span>
+                                </div>
+                                <div class="card-body collapse" id="detailed-view-3" style="padding: 0px;height: 0px;">
+                                    <ul class="list-group bg-dark bg-gradient border rounded border-0 shadow-lg list-group-flush"
+                                        style="background: var(--bs-card-cap-bg);">
+                                        <li class="list-group-item d-flex align-items-center"
+                                            style="background: #41474c;border-radius: 0px;height: 25px;border-style: none;border-bottom: 2px solid var(--bs-black);border-bottom-left-radius: 10px;border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 8px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em"
+                                                height="1em" fill="currentColor" class="text-white"
+                                                style="border-radius: 0px;padding: 5px;width: 30px;height: 25px;border: 0.4px none var(--bs-body-color);border-right-style: solid;border-right-color: rgb(0,0,0);border-bottom-right-radius: 8px;border-top-right-radius: 1px;font-size: 10px;padding-left: 0px;">
+                                                <path
+                                                    d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z">
+                                                </path>
+                                            </svg><span class="font-monospace text-white"
+                                                style="margin-left: 30px;font-size: 14px;font-weight: bold;width: 35px;height: 20px;">6</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center"
+                                            style="background: #41474c;border-radius: 8px;height: 25px;border-style: none;border-bottom: 2px solid var(--bs-black);border-top-left-radius: 10px;border-bottom-left-radius: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em"
+                                                height="1em" fill="currentColor" class="text-white"
+                                                style="border-radius: 0px;padding: 5px;width: 30px;height: 25px;border: 0.4px none var(--bs-body-color);border-right-style: solid;border-right-color: rgb(0,0,0);border-bottom-right-radius: 8px;border-top-right-radius: 8px;font-size: 10px;padding-left: 0px;">
+                                                <path
+                                                    d="M378 82.61L224 298.3v149.8c0 17.67-14.31 31.1-32 31.1S160 465.7 160 448V298.3L5.969 82.61C-4.313 68.23-.9688 48.25 13.41 37.97c14.34-10.27 34.38-6.922 44.63 7.453L192 232.1l133.1-187.5c10.28-14.37 30.28-17.7 44.63-7.453C384.1 48.25 388.3 68.23 378 82.61z">
+                                                </path>
+                                            </svg><span class="font-monospace text-white"
+                                                style="margin-left: 30px;font-size: 14px;font-weight: bold;height: 20px;width: 35px;">4</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center"
+                                            style="background: #41474c;border-radius: 8px;height: 25px;border-style: none;border-top-style: none;border-bottom: 3px solid var(--bs-black);border-bottom-left-radius: 10px;border-top-left-radius: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em"
+                                                height="1em" fill="currentColor" class="text-white"
+                                                style="border-radius: 0px;padding: 5px;width: 30px;height: 25px;border: 0.4px none var(--bs-body-color);border-right-style: solid;border-right-color: rgb(0,0,0);border-bottom-right-radius: 1px;border-top-right-radius: 8px;font-size: 10px;padding-left: 0px;">
+                                                <path
+                                                    d="M384 448c0 17.67-14.31 32-32 32H32c-12.41 0-23.72-7.188-28.97-18.42c-5.281-11.25-3.562-24.53 4.375-34.06l276.3-331.5H32c-17.69 0-32-14.33-32-32s14.31-32 32-32h320c12.41 0 23.72 7.188 28.97 18.42c5.281 11.25 3.562 24.53-4.375 34.06L100.3 416H352C369.7 416 384 430.3 384 448z">
+                                                </path>
+                                            </svg><span class="font-monospace text-white"
+                                                style="margin-left: 30px;font-size: 14px;font-weight: bold;width: 35px;height: 20px;">5</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--IPCame tablosu -->
+                    <iframe class="bg-dark bg-gradient border rounded border-4 border-dark shadow-sm d-xxl-flex"
+                        allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/4CGC4PIECuo" width="560"
+                        height="150"
+                        style="width: 317px;height: 160px;text-align: left;position: relative;display: inline;filter: brightness(135%) contrast(106%) sepia(20%);"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--scripts-->,
+    <script Xsrc="jquery-1.10.2.min.js" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/jquery.AshAlom.gaugeMeter-2.0.0.min.js?201510211629"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.min.js" integrity="sha512-fYE9wAJg2PYbpJPxyGcuzDSiMuWJiw58rKa9MWQICkAqEO+xeJ5hg5qPihF8kqa7tbgJxsmgY0Yp51+IMrSEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/gauge.js"></script>
+    <script src="assets/js/tablo.js"></script>  
+</body>
+
+</html>
