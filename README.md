@@ -10,5 +10,7 @@ In this project, various and aesthetically pleasing gauges are used to enhance u
 
 Below are screenshots of the project while it is running:
 
-!Project Screenshot 1
-!Project Screenshot 2
+![ekran1](https://github.com/yrtdsebru/hyperloop/assets/76410649/2d564ca9-6b5f-435a-b151-1530197419e6)
+![ekran2](https://github.com/yrtdsebru/hyperloop/assets/76410649/2858e7a8-04a1-4c81-94b9-6ecbdd9f51a2)
+
+
